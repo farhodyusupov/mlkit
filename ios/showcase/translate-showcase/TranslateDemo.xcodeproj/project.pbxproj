@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,11 @@
 		10C59CE22268AD0100FCC676 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C59CE12268AD0100FCC676 /* CameraViewController.swift */; };
 		10C59CE72268AD4200FCC676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C59CE52268AD4200FCC676 /* Main.storyboard */; };
 		40004C20247E743C00B6A679 /* TranslateLanguage+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40004C1F247E743C00B6A679 /* TranslateLanguage+Helpers.swift */; };
+		6980BDB8A5F6F1180011E757 /* Pods_TranslateDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E31C39D19336E61E881514E /* Pods_TranslateDemo.framework */; };
 		BB287B3920729CE90069707A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB287B3820729CE90069707A /* AppDelegate.swift */; };
+		E880D8DE2CDDA297003EED18 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = E880D8DD2CDDA297003EED18 /* FirebaseCore */; };
+		E880D8E02CDDAC00003EED18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E880D8DF2CDDAC00003EED18 /* GoogleService-Info.plist */; };
+		E880D8E12CDDAC00003EED18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E880D8DF2CDDAC00003EED18 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +47,13 @@
 		10C59CE12268AD0100FCC676 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		10C59CE62268AD4200FCC676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40004C1F247E743C00B6A679 /* TranslateLanguage+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TranslateLanguage+Helpers.swift"; sourceTree = "<group>"; };
+		7DA9C5EE300EC8927E6B9D9C /* Pods-TranslateDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslateDemo.release.xcconfig"; path = "Target Support Files/Pods-TranslateDemo/Pods-TranslateDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8E31C39D19336E61E881514E /* Pods_TranslateDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TranslateDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB287B3520729CE90069707A /* TranslateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB287B3820729CE90069707A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB287B4420729CE90069707A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E151EB5569ABB465981E8CC4 /* Pods-TranslateDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranslateDemo.debug.xcconfig"; path = "Target Support Files/Pods-TranslateDemo/Pods-TranslateDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E880D8DF2CDDAC00003EED18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E880D8DE2CDDA297003EED18 /* FirebaseCore in Frameworks */,
+				6980BDB8A5F6F1180011E757 /* Pods_TranslateDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +88,18 @@
 		70430DF470DFF802A6B65781 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				E151EB5569ABB465981E8CC4 /* Pods-TranslateDemo.debug.xcconfig */,
+				7DA9C5EE300EC8927E6B9D9C /* Pods-TranslateDemo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7B5A3C5F906D26FA224AA1C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E31C39D19336E61E881514E /* Pods_TranslateDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BB287B2C20729CE90069707A = {
@@ -90,6 +110,7 @@
 				1003B0842290631D00C6F6AE /* TranslateDemoTests */,
 				BB287B3620729CE90069707A /* Products */,
 				70430DF470DFF802A6B65781 /* Pods */,
+				7B5A3C5F906D26FA224AA1C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +126,7 @@
 		BB287B3720729CE90069707A /* TranslateDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E880D8DF2CDDAC00003EED18 /* GoogleService-Info.plist */,
 				10C59CE12268AD0100FCC676 /* CameraViewController.swift */,
 				10330DCB227261B200B68BC5 /* CameraOverlayview.swift */,
 				10330DC72270B43B00B68BC5 /* SearchViewController.swift */,
@@ -152,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB287B4720729CE90069707A /* Build configuration list for PBXNativeTarget "TranslateDemo" */;
 			buildPhases = (
+				FBF07E755B8CF117A54B4BE7 /* [CP] Check Pods Manifest.lock */,
 				BB287B3120729CE90069707A /* Sources */,
 				BB287B3220729CE90069707A /* Frameworks */,
 				BB287B3320729CE90069707A /* Resources */,
+				954519A4A0B2433BA99CC7CC /* [CP] Embed Pods Frameworks */,
+				C4D24D63EF47A058C77C470B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +220,9 @@
 				Base,
 			);
 			mainGroup = BB287B2C20729CE90069707A;
+			packageReferences = (
+				E880D8DC2CDDA20D003EED18 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = BB287B3620729CE90069707A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -210,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E880D8E12CDDAC00003EED18 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,11 +247,99 @@
 			buildActionMask = 2147483647;
 			files = (
 				1001E6FD20CF0C8F00445CB3 /* Assets.xcassets in Resources */,
+				E880D8E02CDDAC00003EED18 /* GoogleService-Info.plist in Resources */,
 				10C59CE72268AD4200FCC676 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		954519A4A0B2433BA99CC7CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TranslateDemo/Pods-TranslateDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TranslateDemo/Pods-TranslateDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4D24D63EF47A058C77C470B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TranslateDemo/Pods-TranslateDemo-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MLKitTextRecognition/LatinOCRResources.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MLKitTranslate/MLKitTranslate_resource.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LatinOCRResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MLKitTranslate_resource.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TranslateDemo/Pods-TranslateDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBF07E755B8CF117A54B4BE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TranslateDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1003B07F2290631D00C6F6AE /* Sources */ = {
@@ -278,7 +395,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TranslateDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.google.firebaseml.showcase.TranslateDemoTests;
@@ -297,7 +418,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TranslateDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.google.firebaseml.showcase.TranslateDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,7 +539,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "arm64 arm64e";
 			};
@@ -422,15 +548,19 @@
 		};
 		BB287B4820729CE90069707A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E151EB5569ABB465981E8CC4 /* Pods-TranslateDemo.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5272YF6DP5;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/TranslateDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.google.mlkit.showcase.translate;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.mlkit.showcase.translate.farhod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -441,15 +571,19 @@
 		};
 		BB287B4920729CE90069707A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DA9C5EE300EC8927E6B9D9C /* Pods-TranslateDemo.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5272YF6DP5;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/TranslateDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.google.mlkit.showcase.translate;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.mlkit.showcase.translate.farhod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -489,6 +623,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E880D8DC2CDDA20D003EED18 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E880D8DD2CDDA297003EED18 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E880D8DC2CDDA20D003EED18 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB287B2D20729CE90069707A /* Project object */;
 }
